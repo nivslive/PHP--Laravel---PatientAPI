@@ -11,7 +11,7 @@ class PatientCreationTest extends TestCase
      */
     public function test_creation_patient(): void
     {
-        $this->assertTrue(true);
+
         $patient = Patient::create([
             'code' => 'JFEPO85TJ1',
             'name' => 'Test',
@@ -19,5 +19,7 @@ class PatientCreationTest extends TestCase
             'birthday' => '10/12/2022',
             'phone' => '124908241',
         ]);
+        
+        $this->assertTrue($patient->phone === '124908241');
     }
 }

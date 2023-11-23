@@ -29,5 +29,6 @@ class PatientTagsInclusionTest extends TestCase
             'tag_id' => $tag->id,
             'patient_id' => $patient->id,
         ]);
+        
     }
 }
